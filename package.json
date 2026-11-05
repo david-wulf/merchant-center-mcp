@@ -1,0 +1,19 @@
+{
+  "name": "merchant-center-mcp",
+  "version": "1.0.0",
+  "private": true,
+  "description": "stdio-Wrapper vor Googles Merchant-API-MCP-Endpunkt (Dienstkonto oder Nutzer-OAuth, Nur-Lesen als Standard)",
+  "type": "module",
+  "main": "server.mjs",
+  "bin": {
+    "merchant-center-mcp": "server.mjs"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "anmelden": "node oauth-anmelden.mjs",
+    "check": "node --check server.mjs && node --check oauth-anmelden.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

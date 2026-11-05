@@ -1,0 +1,8 @@
+node_modules/
+# Anmeldungen und Schluessel nie einchecken
+.env
+*.env
+*.json
+!package.json
+_probe*
+_smoke_*
